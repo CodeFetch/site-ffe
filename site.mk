@@ -23,11 +23,12 @@ GLUON_SITE_PACKAGES := \
         gluon-respondd \
         gluon-setup-mode \
         gluon-status-page \
+	ffe-autoupdater-wifi-fallback \
         iwinfo \
         iptables \
         haveged
 
-DEFAULT_GLUON_RELEASE := 0.8.3
+DEFAULT_GLUON_RELEASE := 0.8.1.9-3wu072
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
