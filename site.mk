@@ -20,31 +20,14 @@ GLUON_SITE_PACKAGES := \
         gluon-next-node \
         gluon-mesh-vpn-fastd \
         gluon-radvd \
-        gluon-respondd \
-	ffe-ath9k-blackout-workaround \
-	ffe-wifi-blackout-workaround \
-        gluon-setup-mode \
+        gluon-announced \
         gluon-status-page \
+	ffe-autoupdater-wifi-fallback \
         iwinfo \
         iptables \
         haveged
-	
-	
 
-ifeq ($(GLUON_TARGET),x86-64)
-# support the usb stack on x86 devices
-# and add a few common USB NICs
-GLUON_SITE_PACKAGES += \
-	kmod-usb-core \
-	kmod-usb2 \
-	kmod-usb-hid \
-	kmod-usb-net \
-	kmod-usb-net-asix \
-	kmod-usb-net-dm9601-ether \
-	kmod-r8169
-endif
-
-DEFAULT_GLUON_RELEASE := 0.8.2
+DEFAULT_GLUON_RELEASE := 0.8.1.9-3wu072
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
